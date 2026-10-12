@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 
 # Base schema with common attributes
 class ItemBase(BaseModel):
@@ -13,5 +13,4 @@ class ItemCreate(ItemBase):
 class Item(ItemBase):
     id: int
 
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)
