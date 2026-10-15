@@ -1,2 +1,4 @@
+name: Terraform obliteration
+
 name: destroy the terraform
   run: terraform destroy -auto-approve
