@@ -1,4 +1,7 @@
 name: Terraform obliteration
-
-name: destroy the terraform
-  run: terraform destroy -auto-approve
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+    steps:
+      name: destroy the terraform
+        run: terraform destroy -auto-approve
