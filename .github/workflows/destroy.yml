@@ -1,2 +1,2 @@
 name: destroy the terraform
-  run: terraform destroy
+  run: terraform destroy -auto-approve
